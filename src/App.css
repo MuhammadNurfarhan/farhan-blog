@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+.app {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #eee;
+  min-height: 100vh;
+}
+
+@media all and (max-width: 780px) {
+  .app {
+    width: 100%;
+  }
+
+  .nav {
+    justify-content:space-around;
+  }
+
+  .brand {
+    text-align: center;
+  }
+}
+
+.brand {
+  font-size: 40px;
+  font-weight: 900;
+  padding: 20px 0 20px 30px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 30px;
+  margin-right: 30px;
+  list-style: none;
+  background-color: #000;
+}
+
+.nav-item {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #eee;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav-item.active {
+  font-weight:800;
+}
+
+.section {
+  padding: 30px;
+}
+
+.section ul {
+  list-style: none;
+}
+
+.section a {
+  text-decoration: none;
+}
+
+.section-title {
+  border-bottom: 1px solid #999;
+  margin-top: 0;
+}
+
+.section-description {
+  line-height: 26px;
+}
+
+.articles {
+  border-top: 1px solid #eee;
+}
+
+.article {
+  border-bottom: 1px solid #eee;
+  padding: 20px 0;
+}
+
+.article-title {
+  margin-top: 0;
+}
+
+.article-title a {
+  color: #000;
+  text-decoration: none;
+}
+
+.article-title a:hover {
+  color: blue;
+}
+
+.article-time {
+  color: #999;
+  font-size: 12px;
+}
+
+.article-image {
+  max-width: 100%;
+  margin: 30px 0;
+}
+
+.article-summary {
+  line-height: 26px;
+  margin-top: 0;
+}
+
+.article-source {
+  color: #999;
+}
+
+.rotate {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  animation: rotation linear 8s infinite;
+}
+
+.rotate:hover {
+  animation: none;
+}
+
+@keyframes rotation {
+  from{
+    transform: rotate(0deg);
+  }
+
+  to{
+    transform: rotate(360deg);
+  }
+}
